@@ -62,7 +62,7 @@ The ৃ (ঋ কার), of course, is a linquistic absurdity that follows no su
 Please refer to the full table below.
 
 ## Mappings
-ব‍্
+
 | Latin | Bangla | Frequency |
 |:-----:|:-----:|:-----:|
 k|ক|2
