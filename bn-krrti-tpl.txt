@@ -1,0 +1,189 @@
+### File header must not be modified
+### This file must be encoded into UTF-8.
+### This table under LGPL
+### comments start with ### not single #
+### Derive from the format of SCIM Table, so you can modify the table from
+### scim-tables' table
+SCIM_Generic_Table_Phrase_Library_TEXT
+VERSION_1_0
+
+### Begin Table definition.
+BEGIN_DEFINITION
+
+### License
+LICENSE = LGPL
+
+### An unique id to distinguish this table among others.
+### Use uuidgen to generate this kind of id.
+UUID = de184eb7-bbd1-41a5-a3a6-a8ce99eb3d47
+
+### A unique number indicates the version of this file.
+### For example the last modified date of this file.
+### This number must be less than 2^32.
+### Just make your table version-able
+SERIAL_NUMBER = %TIMESTAMP_HERE%
+
+### ICON can be any format as long as your pygtk can recognized
+### the most widely ones are "png" and "svg", letter one is recommended
+ICON = krrti.svg
+
+### The symbol to be displayed in IM switchers
+SYMBOL = bn
+
+### The default name of this table, this is needed
+NAME = krrti
+
+### The local names of this table
+NAME.en = krrti
+NAME.de = krrti
+NAME.hu = krrti
+NAME.bn = বাংলা-কৃতি
+
+### Description
+DESCRIPTION = Latin to Bangla script.
+
+### Supported languages of this table
+LANGUAGES = bn
+
+### The author of this table
+AUTHOR = Adnan Pri <nanoprion@outlook.com>
+
+### Prompt string to be displayed in the status area.
+STATUS_PROMPT = ক
+
+### Valid input chars.
+VALID_INPUT_CHARS = 0123456789ABCDEFGHIJKLMNOPRSTUabcdefghijklmnoprstuvwyz;:*.
+
+### Set to "default" to accept any kind of layout.
+LAYOUT = default
+
+### The max number of input keys for every phrase or character.
+MAX_KEY_LENGTH = 4
+
+### If true then the result string will be committed to client automatically.
+### This should be used with AUTO_SELECT = TRUE.
+AUTO_COMMIT = TRUE
+
+### Automatically select the first candidate phrase when typing.
+AUTO_SELECT = TRUE
+
+### Use full width punctuation by default
+DEF_FULL_WIDTH_PUNCT = TRUE
+### Not use full width letter by default
+DEF_FULL_WIDTH_LETTER = FALSE
+
+### If true then the phrases' frequencies will be adjusted dynamically
+### according your using frequency.
+DYNAMIC_ADJUST = TRUE 
+
+### Whether user are allow to define phrase, default is true
+### You have to define the word construction rules below.
+### For input methods which do not input phrases, set this to False
+USER_CAN_DEFINE_PHRASE = FALSE
+
+### Rules for constructing user defined phrase.
+RULES =
+
+### The key strokes to commit the convert result to client.
+COMMIT_KEYS = space
+
+### The key strokes to forward the inputted string to client.
+FORWARD_KEYS = Return
+
+### The key strokes to select candidiate phrases.
+SELECT_KEYS = F1,F2,F3,F4,F5,F6,F7,F8,F9
+
+### The key strokes to page up the lookup table.
+PAGE_UP_KEYS = Page_Up
+
+### The key strokes to page down the lookup table.
+PAGE_DOWN_KEYS = Page_Down
+
+END_DEFINITION
+
+### Begin Table data.
+### Format of every line whose formated in "input_keys\tphrase\tfreq\n" is an
+### entry.
+### From left to right, the 1st column are the input key combination that you
+### entered via keyboard; the 2nd column are presented character or phrase of
+### the key combination you want; the 3rd column are frequency of the character
+### or phrase.
+
+BEGIN_TABLE
+k	ক	2
+kh	খ	2
+g	গ	2
+gh	ঘ	2
+Ng	ঙ	1
+ch	চ	2
+chh	ছ	1
+z	জ	1
+j:	জ	1
+jh	ঝ	1
+ngg	ঞ	1
+T	ট	1
+Th	ঠ	1
+D	ড	1
+Dh	ঢ	1
+N	ণ	1
+t	ত	1
+th	থ	1
+d	দ	1
+dh	ধ	1
+n	ন	1
+p	প	1
+ph	ফ	1
+f	ফ	1
+b	ব	1
+bh	ভ	1
+m	ম	1
+j	য	1
+r	র	2
+l	ল	1
+sh	শ	1
+Sh	ষ	1
+s	স	1
+h	হ	1
+t:	ৎ	1
+ng	ং	1
+o	ো	1
+O	ও	1
+O:	অ	1
+i	ি	1
+ii	ী	2
+I	ই	2
+II	ঈ	2
+a	া	2
+A	আ	2
+e	ে	2
+E	এ	2
+ou	ৌ	2
+oi	ৈ	2
+u	ু	2
+uu	ূ	2
+U	উ	2
+UU	ঊ	2
+rr	ৃ	2
+rr:	ঋ	1
+R:	ড়	1
+Dh:	ঢ়	1
+y	য়	2
+y:	‍্য	1
+r:	‍‍্র	1
+b:	‍্ব	1
+;	্	2		# হসন্ত
+ng:	ঁ	2		# চন্দ্রবিন্দু
+::	ঃ	2		# বিসর্গ
+0	০	2
+1	১	2
+2	২	2
+3	৩	2
+4	৪	2
+5	৫	2
+6	৬	2
+7	৭	2
+8	৮	2
+9	৯	2
+.	৷	1
+;;	;	1
+END_TABlE
